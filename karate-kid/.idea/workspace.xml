@@ -16,7 +16,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1TPiEA3vdRQLa6GT4IhyAsiWgjW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,7 +48,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.productsRunner.testDone">
+  <component name="RunManager" selected="JUnit.productsRunner.testAll">
+    <configuration name="productsRunner.testAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day2-hackhaton-team1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="feature.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="feature.product" />
+      <option name="MAIN_CLASS_NAME" value="feature.product.productsRunner" />
+      <option name="METHOD_NAME" value="testAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="productsRunner.testDone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day2-hackhaton-team1" />
       <extension name="coverage">
@@ -80,6 +96,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sellerRunner.testAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day2-hackhaton-team1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="feature.seller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="feature.seller" />
+      <option name="MAIN_CLASS_NAME" value="feature.seller.sellerRunner" />
+      <option name="METHOD_NAME" value="testAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sellerRunner.testDone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day2-hackhaton-team1" />
       <extension name="coverage">
@@ -98,8 +130,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.productsRunner.testDone" />
+        <item itemvalue="JUnit.productsRunner.testAll" />
+        <item itemvalue="JUnit.sellerRunner.testAll" />
         <item itemvalue="JUnit.sellerRunner.testDone" />
+        <item itemvalue="JUnit.productsRunner.testDone" />
         <item itemvalue="JUnit.sellerRunner" />
       </list>
     </recent_temporary>
@@ -115,6 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573368016999</updated>
       <workItem from="1573368020235" duration="4079000" />
+      <workItem from="1573373113982" duration="1125000" />
     </task>
     <servers />
   </component>
@@ -126,10 +161,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/feature/seller/sellerRunner.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

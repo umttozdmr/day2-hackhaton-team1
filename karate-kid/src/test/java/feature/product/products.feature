@@ -1,14 +1,16 @@
 Feature: Day-2 Hackhaton Product Service API Testing
 
   Background:
-    * url appHost
+    * url appHost + ":5001/"
     * header Accept = 'application/json'
     * def product =
       """
       {
-        "id": "1",
-        "name": "Stadia",
-        "type": "Gaming",
+        "id": 1,
+        "sellerId": 2,
+        "title": "Macbook Pro",
+        "price": 100,
+        "stock": 5
       }
       """
   @done
@@ -21,24 +23,24 @@ Feature: Day-2 Hackhaton Product Service API Testing
     Given path '/healthz'
     When method GET
     Then status 200
-    And match $.app == 'live'
 
   Scenario: Product create
     Given path productsPath
+    And request product
     When method POST
-    And params product
     Then status 201
 
-  Scenario: Seller presentation validation?
+  Scenario: Product presentation validation?
     Given path productsPath + "/" + product.id
     When method GET
     Then status 200
-    And match $ == product
+    And match response == product
 
-  Scenario: Validation Sellers list
+  Scenario: Validation Product list
     Given path productPath
     When method GET
     Then status 200
-#    validaton righting
+    And match response == '#notnull'
+
 
 

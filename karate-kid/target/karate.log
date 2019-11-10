@@ -323,3 +323,1396 @@
 10:39:29.483 [main] INFO  com.intuit.karate - [print] Karate
 10:39:29.485 [main] INFO  com.intuit.karate - [print] is
 10:39:29.488 [main] INFO  com.intuit.karate - [print] Here
+11:06:27.445 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:06:27.506 [main] INFO  com.intuit.karate - [print] Karate
+11:06:27.509 [main] INFO  com.intuit.karate - [print] http://www.mocky.io/v2:5001/
+11:06:27.511 [main] INFO  com.intuit.karate - [print] is
+11:06:27.513 [main] INFO  com.intuit.karate - [print] Here
+11:06:59.640 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:06:59.706 [main] INFO  com.intuit.karate - [print] Karate
+11:06:59.709 [main] INFO  com.intuit.karate - [print] http://localhost:5001/
+11:06:59.711 [main] INFO  com.intuit.karate - [print] is
+11:06:59.713 [main] INFO  com.intuit.karate - [print] Here
+11:07:16.513 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:07:16.582 [main] INFO  com.intuit.karate - [print] Karate
+11:07:16.585 [main] INFO  com.intuit.karate - [print] http://localhost:5000/
+11:07:16.588 [main] INFO  com.intuit.karate - [print] http://localhost:5001/
+11:07:16.589 [main] INFO  com.intuit.karate - [print] is
+11:07:16.591 [main] INFO  com.intuit.karate - [print] Here
+11:10:19.995 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:20.059 [main] INFO  com.intuit.karate - [print] Karate
+11:10:20.061 [main] INFO  com.intuit.karate - [print] is
+11:10:20.063 [main] INFO  com.intuit.karate - [print] Here
+11:10:20.073 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:20.903 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:10:20.931 [main] DEBUG com.intuit.karate - response time in milliseconds: 27.31
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:10:20 GMT
+1 < Server: Kestrel
+
+11:10:20.939 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:20.941 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
+11:10:20.955 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:20.968 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:10:21.014 [main] DEBUG com.intuit.karate - response time in milliseconds: 45.52
+1 < 500
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:10:20 GMT
+1 < Server: Kestrel
+
+11:10:21.014 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 46, url: http://localhost:5000/sellers/1, response: 
+11:10:21.022 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:21.024 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:10:21.033 [main] DEBUG com.intuit.karate - response time in milliseconds: 8.05
+1 < 204
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:10:20 GMT
+1 < Server: Kestrel
+
+11:10:21.033 [main] ERROR com.intuit.karate - status code was: 204, expected: 200, response time: 8, url: http://localhost:5000/sellers, response: 
+11:10:21.040 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:21.046 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:10:21.325 [main] DEBUG com.intuit.karate - response time in milliseconds: 276.14
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:10:21 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+""
+
+11:10:56.583 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:56.643 [main] INFO  com.intuit.karate - [print] Karate
+11:10:56.646 [main] INFO  com.intuit.karate - [print] is
+11:10:56.648 [main] INFO  com.intuit.karate - [print] Here
+11:10:56.658 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:57.497 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:10:57.525 [main] DEBUG com.intuit.karate - response time in milliseconds: 27.25
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:10:57 GMT
+1 < Server: Kestrel
+
+11:10:57.534 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:57.536 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
+11:10:57.549 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:57.557 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:10:57.561 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.74
+1 < 500
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:10:57 GMT
+1 < Server: Kestrel
+
+11:10:57.561 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 4, url: http://localhost:5000/sellers/1, response: 
+11:10:57.569 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:57.572 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:10:57.575 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.80
+1 < 204
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:10:57 GMT
+1 < Server: Kestrel
+
+11:10:57.575 [main] ERROR com.intuit.karate - status code was: 204, expected: 200, response time: 3, url: http://localhost:5000/sellers, response: 
+11:10:57.584 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:57.591 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:10:57.605 [main] DEBUG com.intuit.karate - response time in milliseconds: 13.32
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:10:57 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+""
+
+11:11:20.750 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:20.810 [main] INFO  com.intuit.karate - [print] Karate
+11:11:20.812 [main] INFO  com.intuit.karate - [print] is
+11:11:20.814 [main] INFO  com.intuit.karate - [print] Here
+11:11:20.824 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:21.724 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:11:21.752 [main] DEBUG com.intuit.karate - response time in milliseconds: 27.25
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:11:21 GMT
+1 < Server: Kestrel
+
+11:11:21.761 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:21.767 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":"1","username":"testuser","email":"test@user.com"}
+
+11:11:21.808 [main] DEBUG com.intuit.karate - response time in milliseconds: 39.88
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:11:21 GMT
+1 < Location: sellers/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:11:21.815 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:21.823 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:11:21.827 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.82
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:11:21 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:11:21.829 [main] ERROR com.intuit.karate - assertion failed: path: $.id, actual: 1, expected: '1', reason: actual value is not a string
+11:11:21.841 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:21.844 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:11:21.849 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.33
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:11:21 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"}]
+
+11:11:21.855 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:21.861 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:11:21.868 [main] DEBUG com.intuit.karate - response time in milliseconds: 6.09
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:11:21 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+""
+
+11:11:57.441 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:57.511 [main] INFO  com.intuit.karate - [print] Karate
+11:11:57.513 [main] INFO  com.intuit.karate - [print] is
+11:11:57.515 [main] INFO  com.intuit.karate - [print] Here
+11:11:57.525 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:58.384 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:11:58.412 [main] DEBUG com.intuit.karate - response time in milliseconds: 26.97
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:11:58 GMT
+1 < Server: Kestrel
+
+11:11:58.419 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:58.426 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":"1","username":"testuser","email":"test@user.com"}
+
+11:11:58.431 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.80
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:11:58 GMT
+1 < Location: sellers/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:11:58.438 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:58.447 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:11:58.451 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.59
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:11:58 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:11:58.455 [main] ERROR com.intuit.karate - assertion failed: path: $.id, actual: 1, expected: '1', reason: actual value is not a string
+11:11:58.469 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:58.471 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:11:58.474 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.54
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:11:58 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"}]
+
+11:11:58.481 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:11:58.486 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:11:58.491 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.73
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:11:58 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+""
+
+11:12:18.847 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:12:18.907 [main] INFO  com.intuit.karate - [print] Karate
+11:12:18.909 [main] INFO  com.intuit.karate - [print] is
+11:12:18.911 [main] INFO  com.intuit.karate - [print] Here
+11:12:18.921 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:12:19.749 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:12:19.778 [main] DEBUG com.intuit.karate - response time in milliseconds: 27.84
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:12:19 GMT
+1 < Server: Kestrel
+
+11:12:19.786 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:12:19.792 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":"1","username":"testuser","email":"test@user.com"}
+
+11:12:19.797 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.17
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:12:19 GMT
+1 < Location: sellers/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:12:19.803 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:12:19.811 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:12:19.814 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.76
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:12:19 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:12:19.831 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:12:19.834 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:12:19.837 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.71
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:12:19 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"}]
+
+11:12:19.842 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:12:19.848 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:12:19.854 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.92
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:12:19 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+""
+
+11:13:00.643 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:00.702 [main] INFO  com.intuit.karate - [print] Karate
+11:13:00.704 [main] INFO  com.intuit.karate - [print] is
+11:13:00.707 [main] INFO  com.intuit.karate - [print] Here
+11:13:00.717 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:01.566 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:13:01.595 [main] DEBUG com.intuit.karate - response time in milliseconds: 28.29
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:13:01 GMT
+1 < Server: Kestrel
+
+11:13:01.604 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:01.610 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":"1","username":"testuser","email":"test@user.com"}
+
+11:13:01.615 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.46
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:13:01 GMT
+1 < Location: sellers/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:13:01.622 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:01.630 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:13:01.633 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.66
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:13:01 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:13:01.638 [main] INFO  com.intuit.karate - [print]
+11:13:01.640 [main] INFO  com.intuit.karate - [print] 1
+11:13:01.647 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:01.648 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:13:01.652 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.04
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:13:01 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"}]
+
+11:13:01.658 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:01.663 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:13:01.672 [main] DEBUG com.intuit.karate - response time in milliseconds: 8.22
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:13:01 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+""
+
+11:13:33.681 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:33.745 [main] INFO  com.intuit.karate - [print] Karate
+11:13:33.747 [main] INFO  com.intuit.karate - [print] is
+11:13:33.750 [main] INFO  com.intuit.karate - [print] Here
+11:13:33.760 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:34.613 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:13:34.642 [main] DEBUG com.intuit.karate - response time in milliseconds: 27.56
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:13:34 GMT
+1 < Server: Kestrel
+
+11:13:34.650 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:34.657 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":"1","username":"testuser","email":"test@user.com"}
+
+11:13:34.662 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.54
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:13:34 GMT
+1 < Location: sellers/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:13:34.669 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:34.677 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:13:34.680 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.01
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:13:34 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:13:34.686 [main] INFO  com.intuit.karate - [print]
+11:13:34.689 [main] INFO  com.intuit.karate - [print] 1
+11:13:34.695 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:34.697 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:13:34.700 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.12
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:13:34 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"}]
+
+11:13:34.707 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:13:34.712 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:13:34.718 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.41
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:13:34 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+""
+
+11:14:17.555 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:14:17.619 [main] INFO  com.intuit.karate - [print] Karate
+11:14:17.621 [main] INFO  com.intuit.karate - [print] is
+11:14:17.623 [main] INFO  com.intuit.karate - [print] Here
+11:14:17.634 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:14:18.470 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:14:18.497 [main] DEBUG com.intuit.karate - response time in milliseconds: 25.64
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:14:18 GMT
+1 < Server: Kestrel
+
+11:14:18.506 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:14:18.512 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 56
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":"1","username":"testuser","email":"test@user.com"}
+
+11:14:18.517 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.10
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:14:18 GMT
+1 < Location: sellers/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:14:18.523 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:14:18.531 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:14:18.535 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.78
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:14:18 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:14:18.540 [main] INFO  com.intuit.karate - [print]
+11:14:18.543 [main] INFO  com.intuit.karate - [print] 1
+11:14:18.548 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:14:18.550 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:14:18.553 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.81
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:14:18 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"}]
+
+11:14:18.560 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:14:18.566 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:14:18.572 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.87
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:14:18 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+""
+
+11:15:21.090 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:15:22.003 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:15:22.038 [main] DEBUG com.intuit.karate - response time in milliseconds: 33.09
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:15:21 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:15:22.045 [main] INFO  com.intuit.karate - [print]
+11:16:16.279 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:16:17.229 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:16:17.265 [main] DEBUG com.intuit.karate - response time in milliseconds: 34.04
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:16:17 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:16:17.268 [main] ERROR com.intuit.karate - assertion failed: path: $.id, actual: 1, expected: '1', reason: actual value is not a string
+11:16:41.448 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:16:42.363 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:16:42.397 [main] DEBUG com.intuit.karate - response time in milliseconds: 32.56
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:16:42 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"userName":"testuser","email":"test@user.com"}
+
+11:16:42.399 [main] ERROR com.intuit.karate - assertion failed: path: $, actual: {id=1, userName=testuser, email=test@user.com}, expected: {id=1, username=testuser, email=test@user.com}, reason: all key-values did not match, expected has un-matched keys: [username]
+11:17:16.601 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:17:16.660 [main] INFO  com.intuit.karate - [print] Karate
+11:17:16.662 [main] INFO  com.intuit.karate - [print] is
+11:17:16.664 [main] INFO  com.intuit.karate - [print] Here
+11:17:16.675 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:17:17.515 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:17:17.544 [main] DEBUG com.intuit.karate - response time in milliseconds: 28.28
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:17:17 GMT
+1 < Server: Kestrel
+
+11:17:17.551 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:17:17.557 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 54
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:17:17.563 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.98
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:17:17 GMT
+1 < Location: sellers/2
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:17:17.570 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:17:17.578 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:17:17.581 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.67
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:17:17 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:17:17.589 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:17:17.592 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:17:17.594 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.45
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:17:17 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"}]
+
+11:17:17.601 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:17:17.607 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:17:17.614 [main] DEBUG com.intuit.karate - response time in milliseconds: 7.10
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:17:17 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+""
+
+11:20:08.810 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:20:08.871 [main] INFO  com.intuit.karate - [print] Karate
+11:20:08.873 [main] INFO  com.intuit.karate - [print] is
+11:20:08.875 [main] INFO  com.intuit.karate - [print] Here
+11:20:08.886 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:20:09.718 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:20:09.761 [main] DEBUG com.intuit.karate - response time in milliseconds: 41.94
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:20:09 GMT
+1 < Server: Kestrel
+
+11:20:09.769 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:20:09.775 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5001/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 65
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:20:09.931 [main] DEBUG com.intuit.karate - response time in milliseconds: 152.23
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:20:09 GMT
+1 < Location: products/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:20:09.939 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:20:09.947 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:20:09.953 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.29
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:20:09 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:20:09.964 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:21:05.111 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:21:05.180 [main] INFO  com.intuit.karate - [print] Karate
+11:21:05.182 [main] INFO  com.intuit.karate - [print] is
+11:21:05.184 [main] INFO  com.intuit.karate - [print] Here
+11:21:05.194 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:21:06.021 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:21:06.051 [main] DEBUG com.intuit.karate - response time in milliseconds: 29.02
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:21:05 GMT
+1 < Server: Kestrel
+
+11:21:06.059 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:21:06.066 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5001/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 65
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:21:06.078 [main] DEBUG com.intuit.karate - response time in milliseconds: 11.66
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:21:05 GMT
+1 < Location: products/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:21:06.085 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:21:06.093 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:21:06.096 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.63
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:21:05 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:21:06.107 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:02.464 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:02.529 [main] INFO  com.intuit.karate - [print] Karate
+11:22:02.530 [main] INFO  com.intuit.karate - [print] is
+11:22:02.532 [main] INFO  com.intuit.karate - [print] Here
+11:22:02.542 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:03.372 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:22:03.400 [main] DEBUG com.intuit.karate - response time in milliseconds: 26.95
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:22:03 GMT
+1 < Server: Kestrel
+
+11:22:03.407 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:03.414 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 54
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:22:03.418 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.97
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:22:03 GMT
+1 < Location: sellers/2
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:22:03.426 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:03.434 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:22:03.437 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.54
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:22:03 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:22:03.445 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:03.447 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:22:03.450 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.30
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:22:03 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"}]
+
+11:22:03.468 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:03.473 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:22:03.484 [main] DEBUG com.intuit.karate - response time in milliseconds: 11.04
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:22:03 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+"[{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5}]"
+
+11:22:24.097 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:24.176 [main] INFO  com.intuit.karate - [print] Karate
+11:22:24.178 [main] INFO  com.intuit.karate - [print] is
+11:22:24.181 [main] INFO  com.intuit.karate - [print] Here
+11:22:24.194 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:25.035 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:22:25.063 [main] DEBUG com.intuit.karate - response time in milliseconds: 27.56
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:22:24 GMT
+1 < Server: Kestrel
+
+11:22:25.070 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:25.077 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 54
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:22:25.081 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.00
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:22:24 GMT
+1 < Location: sellers/2
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:22:25.088 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:25.096 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:22:25.099 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.68
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:22:24 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:22:25.107 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:25.109 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:22:25.112 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.37
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:22:24 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"}]
+
+11:22:25.122 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:22:25.126 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:22:25.131 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.45
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:22:24 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+"[{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5}]"
+
+11:23:30.777 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:23:30.845 [main] INFO  com.intuit.karate - [print] Karate
+11:23:30.846 [main] INFO  com.intuit.karate - [print] is
+11:23:30.848 [main] INFO  com.intuit.karate - [print] Here
+11:23:30.859 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:23:31.691 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:23:31.720 [main] DEBUG com.intuit.karate - response time in milliseconds: 28.04
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:23:31 GMT
+1 < Server: Kestrel
+
+11:23:31.727 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:23:31.734 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 54
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:23:31.738 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.62
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:23:31 GMT
+1 < Location: sellers/2
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:23:31.744 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:23:31.752 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:23:31.756 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.72
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:23:31 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:23:31.763 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:23:31.765 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:23:31.769 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.13
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:23:31 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"}]
+
+11:23:31.778 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:23:31.784 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2//products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:23:31.786 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.14
+1 < 404
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:23:31 GMT
+1 < Server: Kestrel
+
+11:23:31.787 [main] ERROR com.intuit.karate - status code was: 404, expected: 200, response time: 2, url: http://localhost:5000/sellers/2//products, response: 
+11:24:07.521 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:24:07.583 [main] INFO  com.intuit.karate - [print] Karate
+11:24:07.585 [main] INFO  com.intuit.karate - [print] is
+11:24:07.587 [main] INFO  com.intuit.karate - [print] Here
+11:24:07.597 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:24:08.427 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:24:08.454 [main] DEBUG com.intuit.karate - response time in milliseconds: 25.66
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:24:08 GMT
+1 < Server: Kestrel
+
+11:24:08.460 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:24:08.467 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 54
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:24:08.472 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.97
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:24:08 GMT
+1 < Location: sellers/2
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:24:08.478 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:24:08.487 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:24:08.490 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.48
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:24:08 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:24:08.497 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:24:08.499 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:24:08.503 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.96
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:24:08 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"}]
+
+11:24:08.512 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:24:08.517 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:24:08.524 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.79
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:24:08 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+"[{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5}]"
+
+11:24:08.524 [main] INFO  com.intuit.karate - [print] "[{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5}]"
+11:25:03.651 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:03.716 [main] INFO  com.intuit.karate - [print] Karate
+11:25:03.718 [main] INFO  com.intuit.karate - [print] is
+11:25:03.720 [main] INFO  com.intuit.karate - [print] Here
+11:25:03.730 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:04.559 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:25:04.588 [main] DEBUG com.intuit.karate - response time in milliseconds: 28.07
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:25:04 GMT
+1 < Server: Kestrel
+
+11:25:04.595 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:04.602 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5001/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 65
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:25:04.616 [main] DEBUG com.intuit.karate - response time in milliseconds: 13.43
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:25:04 GMT
+1 < Location: products/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:25:04.623 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:04.630 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:25:04.633 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.60
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:25:04 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:25:04.645 [main] INFO  com.intuit.karate - karate.env system property was: null 
