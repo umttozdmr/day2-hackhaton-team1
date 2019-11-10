@@ -1,0 +1,325 @@
+09:50:43.239 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:50:44.237 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/5dc7b3223000006d00e1de64
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+09:50:44.645 [main] DEBUG com.intuit.karate - response time in milliseconds: 404.81
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 51
+1 < Content-Type: application/json
+1 < Date: Sun, 10 Nov 2019 06:50:43 GMT
+1 < Expires: Sun, 10 Nov 2019 08:50:43 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+{
+    "app" : "live",
+    "name" : "ozgurturgay"
+}
+
+
+09:55:06.142 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:55:07.044 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/5dc7b3223000006d00e1de64
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+09:55:07.448 [main] DEBUG com.intuit.karate - response time in milliseconds: 401.92
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 51
+1 < Content-Type: application/json
+1 < Date: Sun, 10 Nov 2019 06:55:05 GMT
+1 < Expires: Sun, 10 Nov 2019 08:55:05 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+{
+    "app" : "live",
+    "name" : "ozgurturgay"
+}
+
+
+09:55:07.464 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:55:07.470 [main] INFO  com.intuit.karate - [print] 15
+09:55:07.472 [main] INFO  com.intuit.karate - [print] çalıştı
+09:55:07.475 [main] INFO  com.intuit.karate - [print] çalışıyor
+09:57:17.705 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:57:17.773 [main] INFO  com.intuit.karate - [print] /sellers15
+09:57:17.775 [main] INFO  com.intuit.karate - [print] çalıştı
+09:57:17.777 [main] INFO  com.intuit.karate - [print] çalışıyor
+09:57:47.864 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:57:47.931 [main] INFO  com.intuit.karate - [print] NaN
+09:57:47.934 [main] INFO  com.intuit.karate - [print] çalıştı
+09:57:47.936 [main] INFO  com.intuit.karate - [print] çalışıyor
+09:58:10.135 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:58:10.199 [main] INFO  com.intuit.karate - [print] /sellers/15
+09:58:10.201 [main] INFO  com.intuit.karate - [print] çalıştı
+09:58:10.204 [main] INFO  com.intuit.karate - [print] çalışıyor
+10:05:43.250 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:05:43.313 [main] INFO  com.intuit.karate - [print] /sellers/15/products
+10:05:43.315 [main] INFO  com.intuit.karate - [print] GET
+10:05:43.317 [main] INFO  com.intuit.karate - [print] 200
+10:25:21.039 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:25:21.101 [main] INFO  com.intuit.karate - [print] Karate
+10:25:21.103 [main] INFO  com.intuit.karate - [print] is
+10:25:21.105 [main] INFO  com.intuit.karate - [print] Here
+10:38:01.784 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:01.857 [main] INFO  com.intuit.karate - [print] Karate
+10:38:01.859 [main] INFO  com.intuit.karate - [print] is
+10:38:01.861 [main] INFO  com.intuit.karate - [print] Here
+10:38:02.012 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:02.013 [main] INFO  com.intuit.karate - [print] Karate
+10:38:02.014 [main] INFO  com.intuit.karate - [print] is
+10:38:02.014 [main] INFO  com.intuit.karate - [print] Here
+10:38:31.860 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:31.923 [main] INFO  com.intuit.karate - [print] Karate
+10:38:31.926 [main] INFO  com.intuit.karate - [print] is
+10:38:31.928 [main] INFO  com.intuit.karate - [print] Here
+10:38:31.936 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:32.768 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:33.236 [main] DEBUG com.intuit.karate - response time in milliseconds: 467.01
+1 < 500
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:33.237 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 467, url: http://www.mocky.io/v2/healthz, response: 
+10:38:33.255 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:33.257 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
+10:38:33.268 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:33.280 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:33.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 273.76
+1 < 500
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:33.555 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 274, url: http://www.mocky.io/v2/products/1, response: 
+10:38:33.562 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:33.576 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:33.579 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:33.863 [main] DEBUG com.intuit.karate - response time in milliseconds: 279.61
+1 < 500
+1 < Age: 1
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:33.864 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 280, url: http://www.mocky.io/v2/healthz, response: 
+10:38:33.871 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:33.873 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
+10:38:33.879 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:33.883 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/sellers/15
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:34.144 [main] DEBUG com.intuit.karate - response time in milliseconds: 260.67
+1 < 500
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:34 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:34.145 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 261, url: http://www.mocky.io/v2/sellers/15, response: 
+10:38:34.152 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:34.154 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:34.430 [main] DEBUG com.intuit.karate - response time in milliseconds: 275.50
+1 < 500
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:34 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:34.430 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 275, url: http://www.mocky.io/v2/sellers, response: 
+10:38:34.438 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:34.443 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/sellers/15/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:34.696 [main] DEBUG com.intuit.karate - response time in milliseconds: 251.86
+1 < 500
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:34 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:34.697 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 252, url: http://www.mocky.io/v2/sellers/15/products, response: 
+10:38:34.745 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:34.747 [main] INFO  com.intuit.karate - [print] Karate
+10:38:34.747 [main] INFO  com.intuit.karate - [print] is
+10:38:34.748 [main] INFO  com.intuit.karate - [print] Here
+10:38:34.754 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:34.757 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:35.000 [main] DEBUG com.intuit.karate - response time in milliseconds: 243.13
+1 < 500
+1 < Age: 1
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:35.001 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 243, url: http://www.mocky.io/v2/healthz, response: 
+10:38:35.008 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:35.009 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
+10:38:35.016 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:35.018 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:35.247 [main] DEBUG com.intuit.karate - response time in milliseconds: 227.76
+1 < 500
+1 < Age: 2
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:35.248 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 228, url: http://www.mocky.io/v2/products/1, response: 
+10:38:35.254 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:35.261 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:35.264 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:35.513 [main] DEBUG com.intuit.karate - response time in milliseconds: 248.16
+1 < 500
+1 < Age: 2
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:35.514 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 248, url: http://www.mocky.io/v2/healthz, response: 
+10:38:35.523 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:35.524 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
+10:38:35.529 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:35.533 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/sellers/15
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:35.787 [main] DEBUG com.intuit.karate - response time in milliseconds: 254.34
+1 < 500
+1 < Age: 1
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:34 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:35.788 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 254, url: http://www.mocky.io/v2/sellers/15, response: 
+10:38:35.794 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:35.795 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:36.057 [main] DEBUG com.intuit.karate - response time in milliseconds: 260.59
+1 < 500
+1 < Age: 1
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:34 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:36.057 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 261, url: http://www.mocky.io/v2/sellers, response: 
+10:38:36.063 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:36.066 [main] DEBUG com.intuit.karate - request:
+1 > GET http://www.mocky.io/v2/sellers/15/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:36.335 [main] DEBUG com.intuit.karate - response time in milliseconds: 268.82
+1 < 500
+1 < Age: 2
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:34 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:36.336 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 269, url: http://www.mocky.io/v2/sellers/15/products, response: 
+10:39:29.402 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:39:29.483 [main] INFO  com.intuit.karate - [print] Karate
+10:39:29.485 [main] INFO  com.intuit.karate - [print] is
+10:39:29.488 [main] INFO  com.intuit.karate - [print] Here

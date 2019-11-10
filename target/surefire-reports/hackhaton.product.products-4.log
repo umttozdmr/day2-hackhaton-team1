@@ -1,0 +1,19 @@
+10:38:35.016 karate.env system property was: null 
+10:38:35.019 request:
+1 > GET http://www.mocky.io/v2/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: www.mocky.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+10:38:35.247 response time in milliseconds: 227.76
+1 < 500
+1 < Age: 2
+1 < Connection: keep-alive
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
+1 < Server: Cowboy
+1 < Via: 1.1 vegur
+
+10:38:35.248 status code was: 500, expected: 200, response time: 228, url: http://www.mocky.io/v2/products/1, response: 
