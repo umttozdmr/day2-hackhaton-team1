@@ -5,7 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Instana.Profiler.Linux.Bundled.Refs" Version="1.0.74" />
+        <PackageReference Include="Instana.Tracing.Core" Version="1.1.8" />
+        <PackageReference Include="Instana.Tracing.Core.Sdk" Version="1.0.59" />
+        <PackageReference Include="Instana.Tracing.Sdk" Version="1.0.36" />
         <PackageReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Instana.Tracing.Core.Rewriter.Alpine" Version="1.0.46" />
     </ItemGroup>
 
 </Project>

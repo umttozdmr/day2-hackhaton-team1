@@ -6,6 +6,9 @@ RUN dotnet publish -c Release -o ../../out
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS runtime
 
+RUN apt-get update &&\
+    apt-get install -y libc++1
+
 WORKDIR /app
 
 COPY --from=build /out .

@@ -24,17 +24,18 @@ namespace Hktn.Api.Controllers
         }
         
         [HttpGet]
-        public ActionResult<List<ProductModel>> GetBySellerId([FromQuery] int sellerId = 0)
+        public async Task<ActionResult<List<ProductModel>>> GetBySellerId([FromQuery] int sellerId = 0)
         {
-            if (sellerId == 0) return Ok(GetAll());
-            
-            return Ok(GetAll().Where(p => p.SellerId == sellerId).ToList());
+            var results = await GetAll();
+
+            return Ok(sellerId == 0 ? results : results.Where(p => p.SellerId == sellerId).ToList());
         }
         
         [HttpGet("{id}")]
-        public ActionResult<List<ProductModel>> Get([FromRoute] int id)
+        public async Task<ActionResult<List<ProductModel>>> Get([FromRoute] int id)
         {
-            return Ok(GetAll().First(s => s.Id == id));
+            var result = (await GetAll()).First(s => s.Id == id);
+            return Ok(result);
         }
         
         [HttpPost]
@@ -56,9 +57,9 @@ namespace Hktn.Api.Controllers
             return Created($"products/{product.Id}", product);
         }
         
-        private List<ProductModel> GetAll()
+        private async Task<List<ProductModel>> GetAll()
         {
-            return _memoryCache.Get<List<ProductModel>>("products");
+            return await Task.Run(() => _memoryCache.Get<List<ProductModel>>("products"));
         }
     }
 }

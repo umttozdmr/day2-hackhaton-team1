@@ -24,15 +24,17 @@ namespace Hktn.Api.Controllers
         }
         
         [HttpGet]
-        public ActionResult<List<SellerModel>> Get()
+        public async Task<ActionResult<List<SellerModel>>> Get()
         {
-            return Ok(GetAll());
+            var result = await Task.Run(GetAll);
+            
+            return Ok(result);
         }
         
         [HttpGet("{id}")]
-        public ActionResult<List<SellerModel>> Get([FromRoute] int id)
+        public async Task<ActionResult<List<SellerModel>>> Get([FromRoute] int id)
         {
-            return Ok(GetAll().First(s => s.Id == id));
+            return Ok((await GetAll()).First(s => s.Id == id));
         }
         
         [HttpPost]
@@ -56,9 +58,9 @@ namespace Hktn.Api.Controllers
             return Ok(await result.Content.ReadAsStringAsync());
         }
 
-        private List<SellerModel> GetAll()
+        private async Task<List<SellerModel>> GetAll()
         {
-            return _memoryCache.Get<List<SellerModel>>("sellers");
+            return await Task.Run(() => _memoryCache.Get<List<SellerModel>>("sellers"));
         }
     }
 }
