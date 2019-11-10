@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+
+  seller:
+    image: turgayozgur/seller
+    ports:
+      - "5000:80"
+    networks:
+      - common
+    environment:
+      - ASPNETCORE_URLS=http://*:80
+
+  product:
+    image: turgayozgur/product
+    ports:
+      - "5001:80"
+    networks:
+      - common
+    environment:
+      - ASPNETCORE_URLS=http://*:80
+
+networks:
+  common:
