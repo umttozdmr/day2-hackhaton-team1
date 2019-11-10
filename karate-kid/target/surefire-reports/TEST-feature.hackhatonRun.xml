@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="feature.hackhatonRun" time="3.631" tests="10" errors="0" skipped="0" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="feature.hackhatonRun" time="2.737" tests="11" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
     <property name="java.vm.version" value="25.221-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\CATWEAR\Projects\KLOIA\day2-hackhaton-team1"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\CATWEAR\Projects\KLOIA\day2-hackhaton-team1\karate-kid"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.os.patch.level" value=""/>
     <property name="test" value="hackhatonRun"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\CATWEAR\Projects\KLOIA\day2-hackhaton-team1"/>
+    <property name="user.dir" value="C:\Users\CATWEAR\Projects\KLOIA\day2-hackhaton-team1\karate-kid"/>
     <property name="java.runtime.version" value="1.8.0_221-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed"/>
@@ -65,164 +65,20 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testAll[1][1]" classname="feature.hackhatonRun" time="0.213"/>
-  <testcase name="testAll[1][2]" classname="feature.hackhatonRun" time="1.347">
-    <failure message="products.feature:23 - status code was: 500, expected: 200, response time: 467, url: http://www.mocky.io/v2/healthz, response: " type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: products.feature:23 - status code was: 500, expected: 200, response time: 467, url: http://www.mocky.io/v2/healthz, response: 
-</failure>
-    <system-out><![CDATA[10:38:31.936 [main] INFO  com.intuit.karate - karate.env system property was: null 
-10:38:32.768 [main] DEBUG com.intuit.karate - request:
-1 > GET http://www.mocky.io/v2/healthz
-1 > Accept: application/json
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: www.mocky.io
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
-
-10:38:33.236 [main] DEBUG com.intuit.karate - response time in milliseconds: 467.01
-1 < 500
-1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
-1 < Server: Cowboy
-1 < Via: 1.1 vegur
-
-10:38:33.237 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 467, url: http://www.mocky.io/v2/healthz, response: 
-]]></system-out>
-  </testcase>
-  <testcase name="testAll[1][3]" classname="feature.hackhatonRun" time="0.031">
-    <failure message="products.feature:28 - request body is required for a POST, please use the &apos;request&apos; keyword" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: products.feature:28 - request body is required for a POST, please use the 'request' keyword
-</failure>
-    <system-out><![CDATA[10:38:33.255 [main] INFO  com.intuit.karate - karate.env system property was: null 
-10:38:33.257 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
-]]></system-out>
-  </testcase>
-  <testcase name="testAll[1][4]" classname="feature.hackhatonRun" time="0.28">
-    <failure message="products.feature:35 - status code was: 500, expected: 200, response time: 274, url: http://www.mocky.io/v2/products/1, response: " type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: products.feature:35 - status code was: 500, expected: 200, response time: 274, url: http://www.mocky.io/v2/products/1, response: 
-</failure>
-    <system-out><![CDATA[10:38:33.268 [main] INFO  com.intuit.karate - karate.env system property was: null 
-10:38:33.280 [main] DEBUG com.intuit.karate - request:
-1 > GET http://www.mocky.io/v2/products/1
-1 > Accept: application/json
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: www.mocky.io
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
-
-10:38:33.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 273.76
-1 < 500
-1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
-1 < Server: Cowboy
-1 < Via: 1.1 vegur
-
-10:38:33.555 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 274, url: http://www.mocky.io/v2/products/1, response: 
-]]></system-out>
-  </testcase>
+  <testcase name="testAll[1][1]" classname="feature.hackhatonRun" time="0.204"/>
+  <testcase name="testAll[1][2]" classname="feature.hackhatonRun" time="0.895"/>
+  <testcase name="testAll[1][3]" classname="feature.hackhatonRun" time="0.154"/>
+  <testcase name="testAll[1][4]" classname="feature.hackhatonRun" time="0.106"/>
   <testcase name="testAll[1][5]" classname="feature.hackhatonRun" time="0.011">
-    <failure message="products.feature:39 - javascript evaluation failed: productPath, ReferenceError: &quot;productPath&quot; is not defined in &lt;eval&gt; at line number 1" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: products.feature:39 - javascript evaluation failed: productPath, ReferenceError: "productPath" is not defined in <eval> at line number 1
+    <failure message="products.feature:40 - javascript evaluation failed: productPath, ReferenceError: &quot;productPath&quot; is not defined in &lt;eval&gt; at line number 1" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: products.feature:40 - javascript evaluation failed: productPath, ReferenceError: "productPath" is not defined in <eval> at line number 1
 ]]></failure>
-    <system-out><![CDATA[10:38:33.562 [main] INFO  com.intuit.karate - karate.env system property was: null 
+    <system-out><![CDATA[11:26:48.572 [main] INFO  com.intuit.karate - karate.env system property was: null 
 ]]></system-out>
   </testcase>
-  <testcase name="testAll[2][1]" classname="feature.hackhatonRun" time="0.301">
-    <failure message="seller.feature:18 - status code was: 500, expected: 200, response time: 280, url: http://www.mocky.io/v2/healthz, response: " type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: seller.feature:18 - status code was: 500, expected: 200, response time: 280, url: http://www.mocky.io/v2/healthz, response: 
-</failure>
-    <system-out><![CDATA[10:38:33.576 [main] INFO  com.intuit.karate - karate.env system property was: null 
-10:38:33.579 [main] DEBUG com.intuit.karate - request:
-1 > GET http://www.mocky.io/v2/healthz
-1 > Accept: application/json
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: www.mocky.io
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
-
-10:38:33.863 [main] DEBUG com.intuit.karate - response time in milliseconds: 279.61
-1 < 500
-1 < Age: 1
-1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Date: Sun, 10 Nov 2019 07:38:33 GMT
-1 < Server: Cowboy
-1 < Via: 1.1 vegur
-
-10:38:33.864 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 280, url: http://www.mocky.io/v2/healthz, response: 
-]]></system-out>
-  </testcase>
-  <testcase name="testAll[2][2]" classname="feature.hackhatonRun" time="0.029">
-    <failure message="seller.feature:23 - request body is required for a POST, please use the &apos;request&apos; keyword" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: seller.feature:23 - request body is required for a POST, please use the 'request' keyword
-</failure>
-    <system-out><![CDATA[10:38:33.871 [main] INFO  com.intuit.karate - karate.env system property was: null 
-10:38:33.873 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
-]]></system-out>
-  </testcase>
-  <testcase name="testAll[2][3]" classname="feature.hackhatonRun" time="0.248">
-    <failure message="seller.feature:30 - status code was: 500, expected: 200, response time: 261, url: http://www.mocky.io/v2/sellers/15, response: " type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: seller.feature:30 - status code was: 500, expected: 200, response time: 261, url: http://www.mocky.io/v2/sellers/15, response: 
-</failure>
-    <system-out><![CDATA[10:38:33.879 [main] INFO  com.intuit.karate - karate.env system property was: null 
-10:38:33.883 [main] DEBUG com.intuit.karate - request:
-1 > GET http://www.mocky.io/v2/sellers/15
-1 > Accept: application/json
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: www.mocky.io
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
-
-10:38:34.144 [main] DEBUG com.intuit.karate - response time in milliseconds: 260.67
-1 < 500
-1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Date: Sun, 10 Nov 2019 07:38:34 GMT
-1 < Server: Cowboy
-1 < Via: 1.1 vegur
-
-10:38:34.145 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 261, url: http://www.mocky.io/v2/sellers/15, response: 
-]]></system-out>
-  </testcase>
-  <testcase name="testAll[2][4]" classname="feature.hackhatonRun" time="0.283">
-    <failure message="seller.feature:36 - status code was: 500, expected: 200, response time: 275, url: http://www.mocky.io/v2/sellers, response: " type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: seller.feature:36 - status code was: 500, expected: 200, response time: 275, url: http://www.mocky.io/v2/sellers, response: 
-</failure>
-    <system-out><![CDATA[10:38:34.152 [main] INFO  com.intuit.karate - karate.env system property was: null 
-10:38:34.154 [main] DEBUG com.intuit.karate - request:
-1 > GET http://www.mocky.io/v2/sellers
-1 > Accept: application/json
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: www.mocky.io
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
-
-10:38:34.430 [main] DEBUG com.intuit.karate - response time in milliseconds: 275.50
-1 < 500
-1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Date: Sun, 10 Nov 2019 07:38:34 GMT
-1 < Server: Cowboy
-1 < Via: 1.1 vegur
-
-10:38:34.430 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 275, url: http://www.mocky.io/v2/sellers, response: 
-]]></system-out>
-  </testcase>
-  <testcase name="testAll[2][5]" classname="feature.hackhatonRun" time="0.284">
-    <failure message="seller.feature:42 - status code was: 500, expected: 200, response time: 252, url: http://www.mocky.io/v2/sellers/15/products, response: " type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: seller.feature:42 - status code was: 500, expected: 200, response time: 252, url: http://www.mocky.io/v2/sellers/15/products, response: 
-</failure>
-    <system-out><![CDATA[10:38:34.438 [main] INFO  com.intuit.karate - karate.env system property was: null 
-10:38:34.443 [main] DEBUG com.intuit.karate - request:
-1 > GET http://www.mocky.io/v2/sellers/15/products
-1 > Accept: application/json
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Host: www.mocky.io
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
-
-10:38:34.696 [main] DEBUG com.intuit.karate - response time in milliseconds: 251.86
-1 < 500
-1 < Connection: keep-alive
-1 < Content-Length: 0
-1 < Date: Sun, 10 Nov 2019 07:38:34 GMT
-1 < Server: Cowboy
-1 < Via: 1.1 vegur
-
-10:38:34.697 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 252, url: http://www.mocky.io/v2/sellers/15/products, response: 
-]]></system-out>
-  </testcase>
+  <testcase name="testAll[2][1]" classname="feature.hackhatonRun" time="0.037"/>
+  <testcase name="testAll[2][2]" classname="feature.hackhatonRun" time="0.076"/>
+  <testcase name="testAll[2][3]" classname="feature.hackhatonRun" time="0.128"/>
+  <testcase name="testAll[2][4]" classname="feature.hackhatonRun" time="0.106"/>
+  <testcase name="testAll[2][5]" classname="feature.hackhatonRun" time="0.168"/>
+  <testcase name="testAll[2][6]" classname="feature.hackhatonRun" time="0.233"/>
 </testsuite>

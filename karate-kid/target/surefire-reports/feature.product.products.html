@@ -168,41 +168,256 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:15]</span><span class="scenario-name">karate health</span>
+<span class="scenario-keyword">Scenario: [1:17]</span><span class="scenario-name">karate health</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* url appHost</div>
-<div class="time-cell passed">0.000049</div>
+<div class="step-cell passed">* url appHost + ":5001/"</div>
+<div class="time-cell passed">0.002849</div>
 </div>
-<div class="preformatted">10:38:01.787 karate.env system property was: null</div>
 <div class="step-row">
 <div class="step-cell passed">* header Accept = 'application/json'</div>
-<div class="time-cell passed">0.002138</div>
+<div class="time-cell passed">0.001687</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def product =</div>
-<div class="time-cell passed">0.000168</div>
+<div class="time-cell passed">0.000209</div>
 </div>
 <div class="preformatted">{
-  "id": "1",
-  "name": "Stadia",
-  "type": "Gaming",
+  "id": 1,
+  "sellerId": 2,
+  "title": "Macbook Pro",
+  "price": 100,
+  "stock": 5
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given print "Karate"</div>
-<div class="time-cell passed">0.001953</div>
+<div class="time-cell passed">0.006986</div>
 </div>
-<div class="preformatted">10:38:01.857 [print] Karate</div>
+<div class="preformatted">11:33:53.541 [print] Karate</div>
 <div class="step-row">
 <div class="step-cell passed">When print "is"</div>
-<div class="time-cell passed">0.002193</div>
+<div class="time-cell passed">0.001959</div>
 </div>
-<div class="preformatted">10:38:01.859 [print] is</div>
+<div class="preformatted">11:33:53.543 [print] is</div>
 <div class="step-row">
 <div class="step-cell passed">Then print "Here"</div>
-<div class="time-cell passed">0.001791</div>
+<div class="time-cell passed">0.002019</div>
 </div>
-<div class="preformatted">10:38:01.861 [print] Here</div>
+<div class="preformatted">11:33:53.546 [print] Here</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [2:22]</span><span class="scenario-name">Service is running?</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url appHost + ":5001/"</div>
+<div class="time-cell passed">0.000355</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+<div class="time-cell passed">0.00009</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def product =</div>
+<div class="time-cell passed">0.00007</div>
+</div>
+<div class="preformatted">{
+  "id": 1,
+  "sellerId": 2,
+  "title": "Macbook Pro",
+  "price": 100,
+  "stock": 5
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path '/healthz'</div>
+<div class="time-cell passed">0.001818</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.845416</div>
+</div>
+<div class="preformatted">11:33:54.375 request:
+1 &gt; GET http://localhost:5001/healthz
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:5001
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:33:54.403 response time in milliseconds: 26.88
+1 &lt; 200
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 10 Nov 2019 08:33:54 GMT
+1 &lt; Server: Kestrel</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000012</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [3:27]</span><span class="scenario-name">Product create</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url appHost + ":5001/"</div>
+<div class="time-cell passed">0.00037</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+<div class="time-cell passed">0.000103</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def product =</div>
+<div class="time-cell passed">0.000073</div>
+</div>
+<div class="preformatted">{
+  "id": 1,
+  "sellerId": 2,
+  "title": "Macbook Pro",
+  "price": 100,
+  "stock": 5
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path productsPath</div>
+<div class="time-cell passed">0.000015</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And request product</div>
+<div class="time-cell passed">0.000017</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method POST</div>
+<div class="time-cell passed">0.01192</div>
+</div>
+<div class="preformatted">11:33:54.416 request:
+1 &gt; POST http://localhost:5001/products
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 65
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:5001
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:33:54.423 response time in milliseconds: 5.86
+1 &lt; 201
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 10 Nov 2019 08:33:54 GMT
+1 &lt; Location: products/1
+1 &lt; Server: Kestrel
+1 &lt; Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 201</div>
+<div class="time-cell passed">0.000008</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [4:33]</span><span class="scenario-name">Product presentation validation?</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url appHost + ":5001/"</div>
+<div class="time-cell passed">0.000446</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+<div class="time-cell passed">0.000115</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def product =</div>
+<div class="time-cell passed">0.000083</div>
+</div>
+<div class="preformatted">{
+  "id": 1,
+  "sellerId": 2,
+  "title": "Macbook Pro",
+  "price": 100,
+  "stock": 5
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path productsPath + "/" + product.id</div>
+<div class="time-cell passed">0.005995</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.004524</div>
+</div>
+<div class="preformatted">11:33:54.437 request:
+1 &gt; GET http://localhost:5001/products/1
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:5001
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:33:54.440 response time in milliseconds: 2.73
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 10 Nov 2019 08:33:54 GMT
+1 &lt; Server: Kestrel
+1 &lt; Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000014</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match response == product</div>
+<div class="time-cell passed">0.003917</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [5:39]</span><span class="scenario-name">Validation Product list</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url appHost + ":5001/"</div>
+<div class="time-cell passed">0.000319</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+<div class="time-cell passed">0.000074</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def product =</div>
+<div class="time-cell passed">0.000072</div>
+</div>
+<div class="preformatted">{
+  "id": 1,
+  "sellerId": 2,
+  "title": "Macbook Pro",
+  "price": 100,
+  "stock": 5
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path productsPath</div>
+<div class="time-cell passed">0.000008</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.005417</div>
+</div>
+<div class="preformatted">11:33:54.452 request:
+1 &gt; GET http://localhost:5001/products
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:5001
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:33:54.455 response time in milliseconds: 2.84
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 10 Nov 2019 08:33:54 GMT
+1 &lt; Server: Kestrel
+1 &lt; Transfer-Encoding: chunked
+[{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}]</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000007</div>
+</div>
 </div>
 </div>
 </body>

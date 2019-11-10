@@ -1,2 +1,0 @@
-10:38:35.008 karate.env system property was: null 
-10:38:35.009 http request failed: request body is required for a POST, please use the 'request' keyword

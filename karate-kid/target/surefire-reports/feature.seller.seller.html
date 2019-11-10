@@ -171,38 +171,311 @@
 <span class="scenario-keyword">Scenario: [1:15]</span><span class="scenario-name">karate health</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* url appHost</div>
-<div class="time-cell passed">0.000081</div>
+<div class="step-cell passed">* url appHost + ":5000/"</div>
+<div class="time-cell passed">0.001969</div>
 </div>
-<div class="preformatted">10:39:29.416 karate.env system property was: null</div>
+<div class="preformatted">11:26:48.601 karate.env system property was: null</div>
 <div class="step-row">
 <div class="step-cell passed">* header Accept = 'application/json'</div>
-<div class="time-cell passed">0.001995</div>
+<div class="time-cell passed">0.000151</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def seller =</div>
-<div class="time-cell passed">0.000164</div>
+<div class="time-cell passed">0.00009</div>
 </div>
 <div class="preformatted">{
-  "id": "15",
-  "username": "testuser",
+  "id": 2,
+  "userName": "testuser",
   "email": "test@user.com",
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given print "Karate"</div>
-<div class="time-cell passed">0.002046</div>
+<div class="time-cell passed">0.000408</div>
 </div>
-<div class="preformatted">10:39:29.483 [print] Karate</div>
+<div class="preformatted">11:26:48.605 [print] Karate</div>
 <div class="step-row">
 <div class="step-cell passed">When print "is"</div>
-<div class="time-cell passed">0.002371</div>
+<div class="time-cell passed">0.00026</div>
 </div>
-<div class="preformatted">10:39:29.486 [print] is</div>
+<div class="preformatted">11:26:48.605 [print] is</div>
 <div class="step-row">
 <div class="step-cell passed">Then print "Here"</div>
-<div class="time-cell passed">0.002123</div>
+<div class="time-cell passed">0.000309</div>
 </div>
-<div class="preformatted">10:39:29.488 [print] Here</div>
+<div class="preformatted">11:26:48.605 [print] Here</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [2:20]</span><span class="scenario-name">Service is running?</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url appHost + ":5000/"</div>
+<div class="time-cell passed">0.000448</div>
+</div>
+<div class="preformatted">11:26:48.611 karate.env system property was: null</div>
+<div class="step-row">
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+<div class="time-cell passed">0.000152</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def seller =</div>
+<div class="time-cell passed">0.00012</div>
+</div>
+<div class="preformatted">{
+  "id": 2,
+  "userName": "testuser",
+  "email": "test@user.com",
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path '/healthz'</div>
+<div class="time-cell passed">0.000146</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.005577</div>
+</div>
+<div class="preformatted">11:26:48.615 request:
+1 &gt; GET http://localhost:5000/healthz
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:5000
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.619 response time in milliseconds: 2.98
+1 &lt; 200
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 &lt; Server: Kestrel</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000011</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [3:25]</span><span class="scenario-name">Seller create</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url appHost + ":5000/"</div>
+<div class="time-cell passed">0.000486</div>
+</div>
+<div class="preformatted">11:26:48.626 karate.env system property was: null</div>
+<div class="step-row">
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+<div class="time-cell passed">0.000112</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def seller =</div>
+<div class="time-cell passed">0.00007</div>
+</div>
+<div class="preformatted">{
+  "id": 2,
+  "userName": "testuser",
+  "email": "test@user.com",
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path sellerPath</div>
+<div class="time-cell passed">0.000008</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And request seller</div>
+<div class="time-cell passed">0.000005</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method POST</div>
+<div class="time-cell passed">0.006192</div>
+</div>
+<div class="preformatted">11:26:48.628 request:
+1 &gt; POST http://localhost:5000/sellers
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 54
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:5000
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:26:48.633 response time in milliseconds: 4.08
+1 &lt; 201
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 &lt; Location: sellers/2
+1 &lt; Server: Kestrel
+1 &lt; Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 201</div>
+<div class="time-cell passed">0.000028</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [4:32]</span><span class="scenario-name">Seller presentation validation?</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url appHost + ":5000/"</div>
+<div class="time-cell passed">0.000492</div>
+</div>
+<div class="preformatted">11:26:48.639 karate.env system property was: null</div>
+<div class="step-row">
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+<div class="time-cell passed">0.000179</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def seller =</div>
+<div class="time-cell passed">0.000139</div>
+</div>
+<div class="preformatted">{
+  "id": 2,
+  "userName": "testuser",
+  "email": "test@user.com",
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path sellerPath + "/" + seller.id</div>
+<div class="time-cell passed">0.003105</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.005682</div>
+</div>
+<div class="preformatted">11:26:48.644 request:
+1 &gt; GET http://localhost:5000/sellers/2
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:5000
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.649 response time in milliseconds: 3.76
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 &lt; Server: Kestrel
+1 &lt; Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000028</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match response == seller</div>
+<div class="time-cell passed">0.000184</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [5:38]</span><span class="scenario-name">Validation Sellers list</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url appHost + ":5000/"</div>
+<div class="time-cell passed">0.000377</div>
+</div>
+<div class="preformatted">11:26:48.655 karate.env system property was: null</div>
+<div class="step-row">
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+<div class="time-cell passed">0.000136</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def seller =</div>
+<div class="time-cell passed">0.000073</div>
+</div>
+<div class="preformatted">{
+  "id": 2,
+  "userName": "testuser",
+  "email": "test@user.com",
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path sellerPath</div>
+<div class="time-cell passed">0.000008</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.005376</div>
+</div>
+<div class="preformatted">11:26:48.657 request:
+1 &gt; GET http://localhost:5000/sellers
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:5000
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.661 response time in milliseconds: 3.34
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 &lt; Server: Kestrel
+1 &lt; Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"}]</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.00001</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And match response == '#notnull'</div>
+<div class="time-cell passed">0.003029</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading">
+<span class="scenario-keyword">Scenario: [6:44]</span><span class="scenario-name">Validation products in seller</span>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* url appHost + ":5000/"</div>
+<div class="time-cell passed">0.000461</div>
+</div>
+<div class="preformatted">11:26:48.671 karate.env system property was: null</div>
+<div class="step-row">
+<div class="step-cell passed">* header Accept = 'application/json'</div>
+<div class="time-cell passed">0.000156</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def seller =</div>
+<div class="time-cell passed">0.000112</div>
+</div>
+<div class="preformatted">{
+  "id": 2,
+  "userName": "testuser",
+  "email": "test@user.com",
+}</div>
+<div class="step-row">
+<div class="step-cell passed">Given path sellerPath + "/" + seller.id + productsPath</div>
+<div class="time-cell passed">0.003707</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method GET</div>
+<div class="time-cell passed">0.008247</div>
+</div>
+<div class="preformatted">11:26:48.677 request:
+1 &gt; GET http://localhost:5000/sellers/2/products
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:5000
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.684 response time in milliseconds: 6.02
+1 &lt; 200
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 &lt; Server: Kestrel
+1 &lt; Transfer-Encoding: chunked
+"[{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5}]"</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000008</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And print response</div>
+<div class="time-cell passed">0.000214</div>
+</div>
+<div class="preformatted">11:26:48.684 [print] "[{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5}]"</div>
+<div class="step-row">
+<div class="step-cell passed">And match response == '#notnull'</div>
+<div class="time-cell passed">0.0002</div>
+</div>
 </div>
 </div>
 </body>

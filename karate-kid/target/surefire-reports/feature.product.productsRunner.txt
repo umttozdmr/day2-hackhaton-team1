@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: feature.product.productsRunner
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.945 sec - in feature.product.productsRunner
