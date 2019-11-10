@@ -1716,3 +1716,497 @@
 {"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
 
 11:25:04.645 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:47.572 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:47.632 [main] INFO  com.intuit.karate - [print] Karate
+11:26:47.634 [main] INFO  com.intuit.karate - [print] is
+11:26:47.637 [main] INFO  com.intuit.karate - [print] Here
+11:26:47.645 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.477 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.512 [main] DEBUG com.intuit.karate - response time in milliseconds: 33.89
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 < Server: Kestrel
+
+11:26:48.522 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.530 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5001/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 65
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:26:48.537 [main] DEBUG com.intuit.karate - response time in milliseconds: 6.33
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 < Location: products/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:26:48.543 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.554 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.558 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.71
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:26:48.572 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.601 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.604 [main] INFO  com.intuit.karate - [print] Karate
+11:26:48.605 [main] INFO  com.intuit.karate - [print] is
+11:26:48.605 [main] INFO  com.intuit.karate - [print] Here
+11:26:48.611 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.614 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.618 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.98
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 < Server: Kestrel
+
+11:26:48.625 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.628 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 54
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:26:48.632 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.08
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 < Location: sellers/2
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:26:48.638 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.644 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.649 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.76
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:26:48.655 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.657 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.661 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.34
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":1,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"},{"id":2,"userName":"testuser","email":"test@user.com"}]
+
+11:26:48.670 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:48.677 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5000/sellers/2/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5000
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:26:48.684 [main] DEBUG com.intuit.karate - response time in milliseconds: 6.02
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:26:48 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+"[{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5}]"
+
+11:26:48.684 [main] INFO  com.intuit.karate - [print] "[{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5},{\"id\":1,\"sellerId\":2,\"title\":\"Macbook Pro\",\"price\":100.0,\"stock\":5}]"
+11:30:21.989 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:30:22.066 [main] INFO  com.intuit.karate - [print] Karate
+11:30:22.068 [main] INFO  com.intuit.karate - [print] is
+11:30:22.070 [main] INFO  com.intuit.karate - [print] Here
+11:30:22.082 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:30:22.955 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:30:22.986 [main] DEBUG com.intuit.karate - response time in milliseconds: 29.54
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:30:22 GMT
+1 < Server: Kestrel
+
+11:30:22.995 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:30:23.004 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5001/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 65
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:30:23.012 [main] DEBUG com.intuit.karate - response time in milliseconds: 7.73
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:30:22 GMT
+1 < Location: products/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:30:23.019 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:30:23.027 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:30:23.030 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.64
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:30:22 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:30:23.041 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:31:31.351 [main] INFO  com.intuit.karate - [print] Karate
+11:31:31.356 [main] INFO  com.intuit.karate - [print] is
+11:31:31.358 [main] INFO  com.intuit.karate - [print] Here
+11:31:32.201 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:31:32.229 [main] DEBUG com.intuit.karate - response time in milliseconds: 26.72
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:31:32 GMT
+1 < Server: Kestrel
+
+11:31:32.242 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5001/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 65
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:31:32.248 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.30
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:31:32 GMT
+1 < Location: products/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:31:32.264 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:31:32.267 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.58
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:31:32 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:33:33.405 [main] INFO  com.intuit.karate - [print] Karate
+11:33:33.410 [main] INFO  com.intuit.karate - [print] is
+11:33:33.412 [main] INFO  com.intuit.karate - [print] Here
+11:33:34.288 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:33:34.319 [main] DEBUG com.intuit.karate - response time in milliseconds: 30.28
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:33:34 GMT
+1 < Server: Kestrel
+
+11:33:34.336 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5001/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 65
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:33:34.345 [main] DEBUG com.intuit.karate - response time in milliseconds: 7.94
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:33:34 GMT
+1 < Location: products/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:33:34.361 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:33:34.365 [main] DEBUG com.intuit.karate - response time in milliseconds: 3.32
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:33:34 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:33:53.537 [main] INFO  com.intuit.karate - [print] Karate
+11:33:53.543 [main] INFO  com.intuit.karate - [print] is
+11:33:53.545 [main] INFO  com.intuit.karate - [print] Here
+11:33:54.375 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:33:54.403 [main] DEBUG com.intuit.karate - response time in milliseconds: 26.88
+1 < 200
+1 < Content-Length: 0
+1 < Date: Sun, 10 Nov 2019 08:33:54 GMT
+1 < Server: Kestrel
+
+11:33:54.416 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:5001/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 65
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:33:54.423 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.86
+1 < 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:33:54 GMT
+1 < Location: products/1
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:33:54.437 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:33:54.440 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.73
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:33:54 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}
+
+11:33:54.452 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:5001/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:5001
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:33:54.455 [main] DEBUG com.intuit.karate - response time in milliseconds: 2.84
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 10 Nov 2019 08:33:54 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+[{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5},{"id":1,"sellerId":2,"title":"Macbook Pro","price":100.0,"stock":5}]
+
+11:35:08.041 [main] INFO  com.intuit.karate - [print] Karate
+11:35:08.047 [main] INFO  com.intuit.karate - [print] is
+11:35:08.049 [main] INFO  com.intuit.karate - [print] Here
+11:35:08.893 [main] DEBUG com.intuit.karate - request:
+1 > GET http://product:80/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: product:80
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:35:21.304 [main] ERROR com.intuit.karate - java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (product), http call failed after 12411 milliseconds for URL: http://product:80/healthz
+11:35:21.304 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (product)
+11:35:21.329 [main] DEBUG com.intuit.karate - request:
+1 > POST http://product:80/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 65
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: product:80
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":1,"sellerId":2,"title":"Macbook Pro","price":100,"stock":5}
+
+11:35:21.334 [main] ERROR com.intuit.karate - java.net.UnknownHostException: product, http call failed after 1 milliseconds for URL: http://product:80/products
+11:35:21.334 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: product
+11:35:21.349 [main] DEBUG com.intuit.karate - request:
+1 > GET http://product:80/products/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: product:80
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:35:21.351 [main] ERROR com.intuit.karate - java.net.UnknownHostException: product, http call failed after 0 milliseconds for URL: http://product:80/products/1
+11:35:21.351 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: product
+11:35:21.360 [main] DEBUG com.intuit.karate - request:
+1 > GET http://product:80/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: product:80
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:35:21.360 [main] ERROR com.intuit.karate - java.net.UnknownHostException: product, http call failed after 0 milliseconds for URL: http://product:80/products
+11:35:21.360 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: product
+11:35:21.372 [main] INFO  com.intuit.karate - [print] Karate
+11:35:21.372 [main] INFO  com.intuit.karate - [print] is
+11:35:21.373 [main] INFO  com.intuit.karate - [print] Here
+11:35:21.380 [main] DEBUG com.intuit.karate - request:
+1 > GET http://seller:80/healthz
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: seller:80
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:35:33.796 [main] ERROR com.intuit.karate - java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (seller), http call failed after 12416 milliseconds for URL: http://seller:80/healthz
+11:35:33.797 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (seller)
+11:35:33.807 [main] DEBUG com.intuit.karate - request:
+1 > POST http://seller:80/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 54
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: seller:80
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{"id":2,"userName":"testuser","email":"test@user.com"}
+
+11:35:33.807 [main] ERROR com.intuit.karate - java.net.UnknownHostException: seller, http call failed after 0 milliseconds for URL: http://seller:80/sellers
+11:35:33.807 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: seller
+11:35:33.820 [main] DEBUG com.intuit.karate - request:
+1 > GET http://seller:80/sellers/2
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: seller:80
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:35:33.821 [main] ERROR com.intuit.karate - java.net.UnknownHostException: seller, http call failed after 0 milliseconds for URL: http://seller:80/sellers/2
+11:35:33.821 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: seller
+11:35:33.828 [main] DEBUG com.intuit.karate - request:
+1 > GET http://seller:80/sellers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: seller:80
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:35:33.828 [main] ERROR com.intuit.karate - java.net.UnknownHostException: seller, http call failed after 0 milliseconds for URL: http://seller:80/sellers
+11:35:33.828 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: seller
+11:35:33.839 [main] DEBUG com.intuit.karate - request:
+1 > GET http://seller:80/sellers/2/products
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: seller:80
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+11:35:33.839 [main] ERROR com.intuit.karate - java.net.UnknownHostException: seller, http call failed after 0 milliseconds for URL: http://seller:80/sellers/2/products
+11:35:33.839 [main] ERROR com.intuit.karate - http request failed: 
+java.net.UnknownHostException: seller

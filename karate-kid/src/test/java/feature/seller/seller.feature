@@ -1,7 +1,7 @@
 Feature: Day-2 Hackhaton Seller Service API Testing
 
   Background:
-    * url appHost + ":5000/"
+    * url appHost + "seller:80/"
     * header Accept = 'application/json'
     * def seller =
       """

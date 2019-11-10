@@ -1,7 +1,7 @@
 Feature: Day-2 Hackhaton Product Service API Testing
 
   Background:
-    * url appHost + ":5001/"
+    * url appHost + "product:80/"
     * header Accept = 'application/json'
     * def product =
       """
@@ -37,10 +37,9 @@ Feature: Day-2 Hackhaton Product Service API Testing
     And match response == product
 
   Scenario: Validation Product list
-    Given path productPath
+    Given path productsPath
     When method GET
     Then status 200
-    And match response == '#notnull'
 
 
 

@@ -1,11 +1,10 @@
 function fn() {    
   var env = karate.env; // get system property 'karate.env'
-  karate.log('karate.env system property was:', env);
   if (!env) {
     env = 'dev';
   }
   var config = {
-	appHost: 'http://localhost',
+	appHost: 'http://',
     sellerPath: '/sellers',
     productsPath: '/products'
   };
