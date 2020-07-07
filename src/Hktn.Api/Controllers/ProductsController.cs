@@ -3,24 +3,31 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Hktn.Api.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Net.Http.Headers;
 
 namespace Hktn.Api.Controllers
 {
     [Produces("application/json")]
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IMemoryCache _memoryCache;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
         public ProductsController(IHttpClientFactory httpClientFactory,
-            IMemoryCache memoryCache)
+            IMemoryCache memoryCache,
+            IHttpContextAccessor httpContextAccessor)
         {
             _httpClientFactory = httpClientFactory;
             _memoryCache = memoryCache;
+            _httpContextAccessor = httpContextAccessor;
         }
         
         [HttpGet]
@@ -42,6 +49,9 @@ namespace Hktn.Api.Controllers
         public async Task<IActionResult> Post([FromBody] ProductModel product)
         {
             var client = _httpClientFactory.CreateClient();
+            client.DefaultRequestHeaders.Add(HeaderNames.Authorization,
+                _httpContextAccessor.HttpContext.Request.Headers[HeaderNames.Authorization].ToString());
+            
             var result = await client.GetAsync($"http://seller/sellers/{product.SellerId}");
             
             if (!result.IsSuccessStatusCode)

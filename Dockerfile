@@ -1,10 +1,10 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 
 COPY . .
 WORKDIR /src/Hktn.Api
 RUN dotnet publish -c Release -o ../../out
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS runtime
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
 
 RUN apt-get update &&\
     apt-get install -y libc++1
