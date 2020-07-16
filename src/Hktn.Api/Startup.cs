@@ -20,6 +20,8 @@ namespace Hktn.Api
             services.AddMemoryCache();
 
             services.AddHttpClient();
+
+            services.AddHttpContextAccessor();
             
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
