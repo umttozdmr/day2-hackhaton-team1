@@ -60,6 +60,8 @@ namespace Hktn.Api.Controllers
             }
             
             var products = _memoryCache.Get<List<ProductModel>>("products") ?? new List<ProductModel>();
+            var lastId = products.Max(p => p.Id);
+            product.Id = lastId + 1;
             products.Add(product);
             
             _memoryCache.Set("products", products);
