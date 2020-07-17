@@ -46,7 +46,7 @@ namespace Hktn.Api.Controllers
 
             seller.Products = await GetProductsBySellerIdAsync(id);
             
-            return Ok();
+            return Ok(seller);
         }
         
         [HttpPost]
@@ -59,7 +59,7 @@ namespace Hktn.Api.Controllers
                 return BadRequest("Email already in use.");
             }
             
-            var lastId = sellers.Max(p => p.Id);
+            var lastId = sellers.Any() ? sellers.Max(p => p.Id) : 0;
             seller.Id = lastId + 1;
             sellers.Add(seller);
             

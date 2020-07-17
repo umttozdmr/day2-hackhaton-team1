@@ -2,7 +2,7 @@ version: "3.7"
 services:
 
   seller:
-    image: turgayozgur/seller
+    build: .
     ports:
       - "5000:80"
     networks:
@@ -11,7 +11,7 @@ services:
       - ASPNETCORE_URLS=http://*:80
 
   product:
-    image: turgayozgur/product
+    build: .
     ports:
       - "5001:80"
     networks:
